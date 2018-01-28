@@ -1,6 +1,6 @@
-# Unstuck
+# brightenUp
 
-### An app for simple reflection & self-care
+### An app for self reflection, self care, and to brighten up your day
 
 
 #### Versions and Dependencies
