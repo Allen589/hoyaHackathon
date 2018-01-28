@@ -1,5 +1,5 @@
 {
-    "name": "brightenUp",
+    "name": "whats-next-app",
     "version": "0.0.1",
     "author": "Ionic Framework",
     "homepage": "http://ionicframework.com/",
@@ -54,4 +54,22 @@
         "ionic": "3.7.0",
         "typescript": "2.3.4"
     },
+    "description": "An Ionic project",
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-console": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-whitelist": {},
+            "ionic-plugin-keyboard": {},
+            "com.telerik.plugins.nativepagetransitions": {},
+            "mx.ferreyra.callnumber": {},
+            "cordova-plugin-speechrecognition": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    }
 }
