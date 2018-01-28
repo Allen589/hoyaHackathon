@@ -1,0 +1,315 @@
+
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.home-button {
+    top: 85%;
+    left: 44%;
+    position: absolute;
+}
+
+.overflow {
+    overflow: visible;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.ion-row {
+    flex: 1;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wide {
+    width: 40%;
+}
+
+.divider {
+    width: 90%;
+    border: 0.5px solid lightgrey;
+}
+
+.h1-title {
+    font-size: 1.9em;
+    font-weight: lighter;
+}
+
+.bottom-margin {
+    margin-bottom: 25px;
+}
+
+.align-center {
+    margin-left: 150px;
+}
+
+.top-margin {
+    margin-top: 25px;
+}
+
+.default-font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+.transparent {
+    background-color: hsla(0,0,100,.3);
+}
+
+.grad {
+  background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(100%, hsla(186,50,50,1)), color-stop(0%, hsla(0,0,100,1)));
+}
+
+// .script {
+//     font-family: 'Shadows Into Light Two', cursive; 
+//     font-size: 28px;
+//     letter-spacing: 3px;
+// }
+
+// .link {
+//     font-weight: bold;
+//     color: hsla(186,50,50,1);
+// }
+
+// -- buttons
+.button-margin {
+    margin: 5% 0;
+}
+
+.inline-icon-button {
+    display: inline-block;
+    margin: 5%;
+    letter-spacing: 0;
+}
+
+.md button {
+    text-transform: lowercase;
+    color: white;
+    box-shadow: none;
+}
+
+.ios button {
+    text-transform: lowercase;
+    color: white;
+    box-shadow: none;
+}
+
+.button-top-margin {
+    margin-top: 50px;
+}
+
+// -- help page
+
+// .help-title {
+//     font-size: 35px;
+// }
+
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.float-right {
+    float: right;
+}
+
+.narrow {
+    width: 210px;
+    padding-left: 20px;
+}
+
+.nav-word {
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 15px
+}
+
+.title-padding {
+    padding: 20px 0;
+}
+
+//help script area
+.wide-message {
+    width: 90%;
+    margin: 5% auto;
+}
+
+.smaller {
+    font-size: 20px;
+}
+
+.info-card {
+    font-size: 1.1em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    padding: 0px;
+}
+
+.justify-right {
+    text-align: right;
+    padding-right: 25px;
+}
+
+.info-title {
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 15px;
+} 
+
+
+// -- response page
+.response-title {
+    font-size: 1.9em;
+    font-weight: lighter;
+    padding-top: 20px;
+} 
+
+// response script area
+.response {
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+// -- home page
+// .main-title {
+//     letter-spacing: 5px;
+//     font-size: 2.5em;
+//     text-transform: lowercase;
+//     font-weight: lighter;
+// }
+
+//home script area
+// .message {
+//     width: 90%;
+//     margin: 5% auto;
+//     padding: 5%;
+// }
+
+// -- form page
+.form-font {
+    font-size: 1.3em;
+    font-weight: lighter;
+    white-space: normal;
+}
+
+// -- breathing circles
+#bigger-circle {
+  width: 200px;
+  height: 200px;
+  margin: 50% auto;
+  left: 23%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: hsla(0, 0, 100, 0.3);
+  position: absolute;
+  z-index: -1;
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    margin: 50% auto;
+    left: 23%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #60B7BF;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    -webkit-animation: breathing 7s linear infinite;
+    animation: breathing 7s linear infinite;
+    }
+
+
+@keyframes breathing {
+  0% {
+    opacity:1;
+    transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+  50% {
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+}
+
+@-moz-keyframes breathing {
+  0% {
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+  50% {
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+  50% {
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+}
+
+@-o-keyframes breathing {
+  0% {
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+  50% {
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+}
+
+@-ms-keyframes breathing {
+  0% {
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+  50% {
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(0.5) scaleY(0.5) ;
+  }
+}
+
+

@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar color="secondary">
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="default-font">
+
+  <ion-grid no-padding>
+    <ion-row align-items-center>
+      <ion-col col-1>
+      </ion-col>
+      <ion-col col-10>
+        <h1 class="response-title">What's going on?</h1>
+      </ion-col>
+      <ion-col col-1>
+      </ion-col>
+    </ion-row>
+
+  <form [formGroup]="emoteForm" (ngSubmit)="logForm()">
+    <ion-row>
+      <ion-col col-1>
+      </ion-col>
+      <ion-col col-10>
+          <div>
+            <ion-input #emoteInput type="text" class="form-font overflow" formControlName="emote" rows="1"></ion-input>
+          </div>
+        </ion-col>
+      <ion-col col-1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row align-items-center>
+      <ion-col col-1>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-fab type="submit" [disabled]="!emoteForm.valid" class="inline" round large>
+          <ion-icon name="send"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-8>
+        <p class="nav-word">Send</p>
+      </ion-col>
+      <ion-col col-1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row align-items-center>
+      <ion-col col-1>
+      </ion-col>
+      <ion-col col-2>
+        <!--<button ion-fab class="inline" (click)="returnHome()">-->
+        <button ion-fab class="inline" type="button" (click)="returnHome()">
+          <ion-icon name="home"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-8>
+        <p class="nav-word">Back to home</p>
+      </ion-col>
+      <ion-col col-1>
+      </ion-col>
+    </ion-row>
+  </form>
+
+  </ion-grid>
+</ion-content>
